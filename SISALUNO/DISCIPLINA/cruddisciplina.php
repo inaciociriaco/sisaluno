@@ -1,9 +1,8 @@
 <?php
-$host = "localhost";
-$dbname = "sisaluno";
-$username = "root";
-$password = "";
-
+define('SERVER', '10.70.230.53:3306'); //servidor
+define('USUARIO', 'sisaluno'); //usuario
+define('SENHA', 'sisaluno2023'); //senha da conexão
+define('DATABASE', 'sisaluno'); //nome da database
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
