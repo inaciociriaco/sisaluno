@@ -1,7 +1,8 @@
 <?php
-$dsn = 'mysql:host=localhost;dbname=sisaluno';
-$user = 'root';
-$password = '';
+define('SERVER', '10.70.230.53:3306'); //servidor
+define('USUARIO', 'sisaluno'); //usuario
+define('SENHA', 'sisaluno2023'); //senha da conexão
+define('DATABASE', 'sisaluno'); //nome da database
 
 try {
     $pdo = new PDO($dsn, $user, $password);
